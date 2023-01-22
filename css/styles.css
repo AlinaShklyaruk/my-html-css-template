@@ -1,0 +1,118 @@
+:root {
+    --primary-text-color: #333333;
+    --secondary-text-color: #666666;
+    --dark-background-color: #171A1F;
+    --background-color: #FFFFFF;
+    --white-text-color: #FFFFFF;
+    --accent-color: #FF5E28;
+    --form-border-color: #B8B8B8;
+    --secondary-white-color: #EBEBEB;
+    --hero-items-background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color: var(--dark-background-color);
+}
+
+.header__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-white-color);
+}
+
+.header__link--current {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--white-text-color);
+}
+
+.header__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+.section__sup-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    color: var(--secondary-white-color);
+}
+
+.hero__title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(72 / 56);
+    color: var(--white-text-color);
+}
+
+.hero {
+    background-color: var(--dark-background-color);
+}
+
+.hero__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 12px;
+    background-color: var(--hero-items-background-color);
+}
+
+.hero__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-white-color);
+}
+
+.section__description {
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    color: var(--secondary-white-color);
+}
+
+.hero__works-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(32 / 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+.hero__pricing-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(32 / 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    color: var(--white-text-color);
+    background-color: var(--dark-background-color);
+    border: 1px solid var(--secondary-white-color);
+}
+
