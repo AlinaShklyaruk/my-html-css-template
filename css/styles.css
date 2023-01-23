@@ -35,14 +35,14 @@ ul {
 }
 
 .header__link--current {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: calc(24 / 14);
     color: var(--white-text-color);
 }
 
 .header__btn {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: calc(24 / 14);
     display: flex;
@@ -50,13 +50,34 @@ ul {
     align-items: center;
     padding: 8px 32px;
     color: var(--white-text-color);
-    background-color: var(--accent-color);
+    background: var(--accent-color);
+}
+
+.section__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(56 / 40);
 }
 
 .section__sup-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(32 / 16);
+    color: var(--secondary-text-color);
+}
+
+.section__sup-title--white-text {
+    color: var(--secondary-white-color);
+}
+
+.section__description {
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    color: var(--secondary-text-color);
+}
+
+.section__description--white-text {
     color: var(--secondary-white-color);
 }
 
@@ -72,6 +93,7 @@ ul {
     background-color: var(--dark-background-color);
 }
 
+
 .hero__item {
     display: flex;
     align-items: flex-start;
@@ -85,34 +107,234 @@ ul {
     color: var(--secondary-white-color);
 }
 
-.section__description {
+.hero__works-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    color: var(--white-text-color);
+    background: var(--accent-color);
+}
+
+.hero__pricing-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    color: var(--white-text-color);
+    background: transparent;
+    border: 1px solid var(--secondary-white-color);
+}
+
+.reasons__item {
+    background-color: var(--background-color);
+}
+
+.reasons__count {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(40 / 24);
+}
+
+.reasons__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+.what-we-do__services-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--primary-text-color);
+    background: transparent;
+}
+
+.what-we-do-item__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(40 / 24);
+}
+
+.what-we-do-item__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+.about {
+    background-color: var(--accent-color);
+}
+
+.about__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(72 / 56);
+    text-align: center;
+    color: var(--white-text-color);
+}
+
+.about__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    border: 1px solid var(--secondary-white-color);
+    color: var(--white-text-color);
+    background: transparent;
+}
+
+.why-us__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(40 / 24);
+}
+
+.why-us__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+.portfolio__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(40 / 24);
+}
+
+.portfolio__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+.portfolio__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    border: 1px solid #666666;
+    background: transparent;
+    color: var(--primary-text-color);
+}
+
+.reviews__text {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+}
+
+.reviews__name {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+}
+
+.reviews__company {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-text-color);
+}
+
+.contact-us {
+    background-color: var(--dark-background-color);
+}
+
+.contact-us__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(72 / 56);
+    color: var(--white-text-color);
+}
+
+.contact-us__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    background: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+.footer {
+    background-color: var(--dark-background-color);
+}
+
+.footer__text {
     font-size: 16px;
     line-height: calc(32 / 16);
     color: var(--secondary-white-color);
 }
 
-.hero__works-btn {
-    font-weight: 600;
+.footer-links__title {
+    font-family: 'Merriweather';
+    font-weight: 700;
     font-size: 16px;
-    line-height: calc(32 / 12);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 40px;
+    line-height: calc(32 / 16);
     color: var(--white-text-color);
-    background-color: var(--accent-color);
 }
 
-.hero__pricing-btn {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: calc(32 / 12);
+.footer-links__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--white-text-color);
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-white-color);
+}
+
+.subscribe__btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(24 / 14);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 40px;
+    padding: 8px 32px;
     color: var(--white-text-color);
-    background-color: var(--dark-background-color);
+    background: var(--accent-color);
+}
+
+.subscribe__input {
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
     border: 1px solid var(--secondary-white-color);
+    color: var(--form-border-color);
+    background: transparent;
 }
-
