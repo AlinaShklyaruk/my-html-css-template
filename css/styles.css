@@ -34,7 +34,6 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
     height: auto;
 }
 
@@ -440,17 +439,101 @@ body {
     margin-top: 80px;
 }
 
+.why-us__main-container {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 112px;
+}
+
+.why-us__item {
+    display: flex;
+    align-items: baseline;
+}
+
+.why-us__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
 .why-us__title {
     font-family: 'Merriweather';
     font-weight: 700;
     font-size: 24px;
     line-height: calc(40 / 24);
+    margin-bottom: 4px;
+}
+
+.why-us__container .section__title {
+    margin-bottom: 16px;
+}
+
+.why-us__description {
+    margin-bottom: 24px;
 }
 
 .why-us__text {
     font-size: 14px;
     line-height: calc(24 / 14);
     color: var(--secondary-text-color);
+}
+
+.why-us__images-container {
+    width: 464px;
+    display: flex;
+}
+
+.why-us__images-item:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.why-us__images-item:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.why-us__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.why-us__container .section__sup-title {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.why-us__container .section__sup-title::before {
+    display: inline-block;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/leaderboard.svg');
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: 50% 50%;
+    margin-right: 8px;
+}
+
+.portfolio__container .section__sup-title {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio__container .section__sup-title::before {
+    display: inline-block;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/donut.svg');
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: 50% 50%;
+    margin-right: 8px;
 }
 
 .portfolio__title {
