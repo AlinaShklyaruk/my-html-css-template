@@ -174,8 +174,8 @@ body {
     background-repeat: no-repeat;
     background-image: url('../images/icons/hero-icon.svg');
     content: "";
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background-position: 50% 50%;
     margin-right: 8px;
 }
@@ -267,23 +267,21 @@ body {
     height: 80px;
     padding: 8px 12px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: var(--background-color);
 }
 
-.reasons__text-box {
+.text-box {
     display: flex;
     flex-direction: column;
 }
 
-.reasons__box {
+.icon-box {
     margin-right: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    padding: 8px;
     background-color: var(--accent-color);
 }
 
@@ -319,6 +317,66 @@ body {
     color: var(--secondary-text-color);
 }
 
+.what-we-do__container {
+    display: flex;
+    align-items: center;
+}
+
+.what-we-do__container .section__sup-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.what-we-do__container .section__sup-title::before {
+    display: inline-block;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/favorite.svg');
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: 50% 50%;
+    margin-right: 8px;
+}
+
+.what-we-do__container .section__title {
+    margin-bottom: 16px;
+}
+
+.what-we-do__description {
+    margin-bottom: 24px;
+}
+
+.what-we-do__main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.what-we-do__list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 112px;
+}
+
+.what-we-do__item {
+    min-width: 464px;
+    min-height: 124px;
+    display: flex;
+    align-items: baseline;
+    padding: 16px;
+}
+
+.what-we-do__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.what-we-do__item:nth-child(2) {
+    background: var(--background-color);
+    box-shadow: 0px 56px 104px rgba(0, 0, 0, 0.15);
+}
+
 .what-we-do__services-btn {
     font-weight: 500;
     font-size: 16px;
@@ -326,7 +384,7 @@ body {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    min-width: 196px;
+    width: 200px;
     padding: 8px 40px;
     border: 1px solid var(--secondary-text-color);
     color: var(--primary-text-color);
@@ -338,6 +396,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: calc(40 / 24);
+    margin-bottom: 4px;
 }
 
 .what-we-do-item__text {
@@ -350,6 +409,13 @@ body {
     background-color: var(--accent-color);
 }
 
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .about__title {
     font-family: 'Merriweather';
     font-weight: 700;
@@ -357,6 +423,7 @@ body {
     line-height: calc(72 / 56);
     text-align: center;
     color: var(--white-text-color);
+    margin-bottom: 80px;
 }
 
 .about__btn {
@@ -370,6 +437,7 @@ body {
     border: 1px solid var(--secondary-white-color);
     color: var(--white-text-color);
     background: transparent;
+    margin-top: 80px;
 }
 
 .why-us__title {
@@ -520,6 +588,4 @@ body {
     padding-right: 8px;
 }
 
-.about__container .section__sup-title {
-    
-}
+
