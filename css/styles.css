@@ -750,6 +750,21 @@ body {
     background-color: var(--dark-background-color);
 }
 
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box:not(:last-child) {
+    margin-right: 48px;
+}
+
 .footer__text {
     font-size: 16px;
     line-height: calc(32 / 16);
@@ -809,4 +824,6 @@ body {
     padding-right: 8px;
 }
 
-
+.footer__container  {
+    display: flex;
+}
