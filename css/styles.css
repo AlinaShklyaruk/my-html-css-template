@@ -723,8 +723,6 @@ body {
     margin-right: 112px;
 }
 
-
-
 .contact-us__title {
     font-family: 'Merriweather';
     font-weight: 700;
@@ -790,22 +788,16 @@ body {
     color: var(--white-text-color);
 }
 
+.footer-links__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .join-us-box {
     width: 262px;
 }
 
 .footer-links__text:not(:last-child) {
     margin-bottom: 8px;
-}
-
-.address__item {
-    margin-bottom: 16px;
-}
-
-.address__link {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    color: var(--secondary-white-color);
 }
 
 .subscribe__btn {
@@ -855,12 +847,49 @@ body {
 margin-right: 24px;
 }
 
-.address__item:nth-child(1) {
+.address__item {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--secondary-white-color);
+}
+
+.address__item:nth-child(1)::before {
     display: inline-block;
     align-items: center;
     background-size: auto;
     background-repeat: no-repeat;
-    background-image: url('../images/icons/hero-icon.svg');
+    background-image: url('../images/icons/location.svg');
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-position: 50% 50%;
+    margin-right: 8px;
+}
+
+.address__item:nth-child(2)::before {
+    display: inline-block;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/phone.svg');
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-position: 50% 50%;
+    margin-right: 8px;
+}
+
+.address__item:nth-child(3)::before {
+    display: inline-block;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/mail.svg');
     content: "";
     width: 24px;
     height: 24px;
