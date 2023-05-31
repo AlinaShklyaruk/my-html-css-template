@@ -833,7 +833,23 @@ body {
     padding-left: 8px;
     padding-right: 8px;
 }
+/*
+@media screen and (min-width: 360px) {
+    .container {
+        width: 360px;
+    }
+}
 
+@media screen and (min-width: 744px) {
+    .container {
+        width: 744px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    width: 1280px;
+}
+*/
 .footer__container {
     display: flex;
     align-items: baseline;
